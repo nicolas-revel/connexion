@@ -21,7 +21,7 @@
     <main id="main_inscription">
       <h2>Inscription</h2>
         <p>Nous aimerions vous connaitre un peu plus ...</p>
-      <form action="connexion.html">
+      <form action="connexion.html" id="form_inscription">
         <section id="information_inscription">
           <div id="inputmail" class="input_group">
             <label for="user_mail" class="input_label">Votre mail</label>
@@ -152,67 +152,85 @@
             </select>
           </div>
         </section>
-        <section id="informations_complémentaires">
-          <div>
-            <label for="pres_user">Peux-tu te présenter ?</label>
+        <section id="informations_complementaires">
+          <div id="presentation_utilisateur">
+            <label for="pres_user">Peux-tu te présenter ..?</label>
             <textarea
               name="presentation_utilisateur"
               id="pres_user"
               cols="40"
-              rows="07"
+              rows="06"
               placeholder="Dis nous tout !"
               spellcheck="true"
             ></textarea>
           </div>
           <div id="user_hobbies">
-            <h2>Tes hobbies ?</h2>
+            <p>Tes hobbies ?</p>
             <div id="hobbies_choicies">
-              <input
-                type="checkbox"
-                name="jeux-video"
-                id="jeux-video"
-                class="hobbies_checkbox"
-              />
-              <label for="jeux-video">Jeux-vidéo</label>
-              <input
-                type="checkbox"
-                name="lecture"
-                id="lecture"
-                class="hobbies_checkbox"
-              />
-              <label for="lecture">Lecture</label>
-              <input
-                type="checkbox"
-                name="sport"
-                id="sport"
-                class="hobbies_checkbox"
-              />
-              <label for="sport">Sport</label>
-              <input
-                type="checkbox"
-                name="ecriture"
-                id="ecriture"
-                class="hobbies_checkbox"
-              />
-              <label for="ecriture">Ecriture</label>
-              <input
-                type="checkbox"
-                name="streaming"
-                id="streaming"
-                class="hobbies_checkbox"
-              />
-              <label for="streaming">Streaming</label>
-              <input
-                type="checkbox"
-                name="sorties"
-                id="sorties"
-                class="hobbies_checkbox"
-              />
-              <label for="sorties">Sorties</label>
+              <div class="grp_hobbies">
+                <div>
+                  <input
+                    type="checkbox"
+                    name="jeux-video"
+                    id="jeux-video"
+                    class="hobbies_checkbox"
+                  />
+                  <label for="jeux-video">Jeux-vidéo</label>
+                </div>
+                <div>
+                  <input
+                    type="checkbox"
+                    name="lecture"
+                    id="lecture"
+                    class="hobbies_checkbox"
+                  />
+                  <label for="lecture">Lecture</label>
+                </div>
+              </div>
+              <div class="grp_hobbies">
+                <div>
+                  <input
+                    type="checkbox"
+                    name="sport"
+                    id="sport"
+                    class="hobbies_checkbox"
+                  />
+                  <label for="sport">Sport</label>
+                </div>
+                <div>
+                  <input
+                    type="checkbox"
+                    name="ecriture"
+                    id="ecriture"
+                    class="hobbies_checkbox"
+                  />
+                  <label for="ecriture">Ecriture</label>
+                </div>
+              </div>
+              <div class="grp_hobbies">
+                <div>
+                  <input
+                    type="checkbox"
+                    name="streaming"
+                    id="streaming"
+                    class="hobbies_checkbox"
+                  />
+                  <label for="streaming">Streaming</label>
+                </div>
+                <div>
+                  <input
+                    type="checkbox"
+                    name="sorties"
+                    id="sorties"
+                    class="hobbies_checkbox"
+                  />
+                  <label for="sorties">Sorties</label>
+                </div>
+              </div>
             </div>
           </div>
         </section>
-        <input type="submit" value="Enregistrer !" />
+        <input type="submit" value="Enregistrer !" id="enregistrer" />
       </form>
     </main>
     <footer>

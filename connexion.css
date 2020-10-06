@@ -205,8 +205,8 @@ footer {
 /* Fin de la section inputs communs */
 
 #connexion {
-  height: 30%;
-  width: 20%;
+  height: 50px;
+  width: 160px;
   font-family: Gravity;
   font-size: 20px;
   background-color: #ffffff;
@@ -225,8 +225,8 @@ footer {
 
 #connexion:focus {
   outline: #ffffff;
-  width: 19.5%;
-  height: 29.5%;
+  height: 50px;
+  width: 152px;
 }
 
 /* Fin de la mise en forme de inputs de connexion */
@@ -314,6 +314,13 @@ main#main_inscription {
   align-items: center;
 }
 
+form#form_inscription {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
 #main_inscription h2 {
   font-size: 50px;
   font-weight: lighter;
@@ -342,7 +349,7 @@ main#main_inscription {
 
 #inputmail {
   border: 2px #ffffff;
-  margin: 10px 10%;
+  margin: 0 5%;
   border-style: solid;
   border-radius: 5px;
   display: flex;
@@ -379,7 +386,7 @@ main#main_inscription {
 }
 
 #inputmail .input_field::placeholder {
-  color: #ffffffe7;
+  color: #ffffffab;
 }
 
 /* Mise en forme des logs */
@@ -388,20 +395,18 @@ main#main_inscription {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: baseline;
+  padding: 0;
   width: 100%;
 }
 
 #userlogin {
   border: 2px #ffffff;
-  margin-right: 5%;
-  margin-top: 9px;
+  margin: 0;
   border-style: solid;
   border-radius: 5px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  align-self: center;
   width: 45%;
 }
 
@@ -439,7 +444,8 @@ main#main_inscription {
 
 #password {
   margin-top: 60px;
-  width: 50%;
+  margin-right: 5px;
+  width: 45%;
   display: flex;
   flex-direction: column;
 }
@@ -492,7 +498,7 @@ div#newpwd {
 
 div#confirmpwd {
   border: 2px #ffffff;
-  margin-top: 10px;
+  margin-top: 20px;
   border-style: solid;
   border-radius: 5px;
   display: flex;
@@ -533,16 +539,15 @@ div#confirmpwd {
   color: #ffffffe7;
 }
 
-/* Mise en forme information perso */
+/* Mise en forme information perso (prénom + nom + date de naissance + genre + niveau d'étude */
 
-#information_personnelle {
+section#information_personnelle {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  width: 70vw;
-  padding:0;
-  
+  margin: 10px;
+  width: 89%;
 }
 
 #information_personnelle .input_group {
@@ -552,10 +557,9 @@ div#confirmpwd {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  align-self: center;
   width: 40%;
   height: max-content;
-  margin: 10px;
+  margin: 15px;
 }
 
 #information_personnelle .input_label {
@@ -592,7 +596,8 @@ div#confirmpwd {
   font-family: Gravity;
   background-color: transparent;
   padding: 3px;
-  margin: 4px;
+  margin-top: 4px;
+  margin-bottom: 4px;
   border-radius: 5px;
   border: none;
   height: 20px;
@@ -651,7 +656,7 @@ div#confirmpwd {
   color: #ffffffe7;
 }
 
-#niveau_etude {
+#niveau_etude.input_group {
   border: 2px #ffffff;
   border-style: solid;
   border-radius: 5px;
@@ -661,7 +666,7 @@ div#confirmpwd {
   align-self: center;
   flex-grow: 0.4;
   height: max-content;
-  margin: 10px;
+  margin-left: 25%;
 }
 
 #user_studylvl {
@@ -684,3 +689,119 @@ div#confirmpwd {
 #user_studylvl::placeholder {
   color: #ffffff;
 }
+
+/* Mise en forme infos-complémentaires (présentation + hobbies) */
+
+section#informations_complementaires {
+  /* background-color: red; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90%;
+  height: 200px;
+  padding: 5px; /* Penser à le retirer éventuellement après */
+  margin: 20px;
+}
+
+#presentation_utilisateur {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#presentation_utilisateur label {
+  font-size: 25px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+#presentation_utilisateur > textarea {
+  resize: none;
+  font-family: Gravity;
+  font-size: 18px;
+  background-color: transparent;
+  border-radius: 5px;
+  border: 2px solid #ffffff;
+  padding: 10px;
+  color: #ffffff;
+}
+
+#presentation_utilisateur > textarea:focus {
+  outline: none;
+  background-color: transparent;
+}
+
+#presentation_utilisateur > textarea::placeholder {
+  color: #ffffffab;
+}
+
+#user_hobbies {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 80%;
+  /* background-  color: green; */
+  width: 100%;
+
+}
+
+#user_hobbies p {
+  margin: 0;
+  font-size: 25px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+#user_hobbies > #hobbies_choicies {
+  width: 75%;
+  height: 60%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.grp_hobbies {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.grp_hobbies label {
+  font-size: 18px;
+  color: #ffffff;
+}
+
+/* Mise en forme bouton enregistrer */
+
+#enregistrer {
+  height: 50px;
+  width: 160px;
+  font-family: Gravity;
+  font-size: 20px;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  margin: 30px;
+  position: fix;
+}
+
+#enregistrer:hover {
+  background-color: transparent;
+  color: white;
+  border: 2px solid #ffffff;
+  border-radius: 6px;
+  transition: 300ms;
+}
+
+#enregistrer:focus {
+  outline: #ffffff;
+  height: 50px;
+  width: 152px;
+}
+
+/* Fin de la page inscription */
