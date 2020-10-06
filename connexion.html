@@ -18,12 +18,10 @@
         </ul>
       </nav>
     </header>
-    <main>
+    <main id="main_connexion">
       <h2>Vous connecter</h2>
       <form action="connexion.html">
-        <!-- Utilisation d'une section plutôt qu'un fieldset car le fieldset est très peu stylisable en CSS -->
-        <section>
-          <!-- input_group = input_label + input_field. Permet de faire l'animation en CSS par la suite. -->
+        <!-- input_group = input_label + input_field. Permet de faire l'animation en CSS par la suite. -->
           <div class="input_group">
             <label for="nom_utilisateur" class="input_label"
               >Nom d'utilisateur</label
@@ -37,18 +35,15 @@
             />
           </div>
           <div class="input_group">
-            <label for="mdp">Mot de passe</label>
-            <input type="password" name="mot_de_passe" id="mdp" />
+            <label for="mdp" class="input_label">Mot de passe</label>
+            <input type="password" name="mot_de_passe" id="mdp" class="input_field"/>
           </div>
-          <div id="connexion">
-            <input type="submit" value="Connexion" />
-          </div>
-        </section>
+            <input type="submit" value="Connexion" id="connexion"/>
       </form>
       <section>
         <div class="conteneur_bouton">
           <div class="bouton">
-            <div class="recto_bouton">Nouveau membre ?</div>
+            <div class="recto_bouton"><p>Nouveau membre ?</p></div>
             <div class="verso_bouton">
               <a href="inscription.html">Vous inscrire</a>
             </div>
@@ -56,7 +51,7 @@
         </div>
         <div class="conteneur_bouton">
           <div class="bouton">
-            <div class="recto_bouton">Mot de passe oublié ?</div>
+            <div class="recto_bouton"><p>Mot de passe oublié ?</p></div>
             <div class="verso_bouton">
               <a href="motdepasse.html">Réinitialiser mon mot de passe</a>
             </div>
