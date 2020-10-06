@@ -1,0 +1,63 @@
+@font-face {
+  font-family: Gravity;
+  src: url(fonts/Gravity-Regular.otf);
+}
+
+body {
+  font-family: Gravity;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Mise en forme du header : début */
+
+header {
+  margin: 0 0 20px 0;
+  background-color: none;
+  border-style: none;
+  border-bottom: 2px black solid;
+  height: 10%;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+
+header h1 {
+  font-size: 40px;
+  font-weight: bolder;
+  margin: 2vh 5%;
+  width: 37%;
+}
+
+header nav {
+  margin-right: 5%;
+  width: 50%;
+}
+
+header nav ul {
+  list-style: none;
+  text-align: center;
+}
+header nav ul li {
+  display: inline-block;
+}
+header nav ul li a {
+  display: block;
+  padding: 2vh 25px;
+  text-decoration: none;
+  color: #989898;
+  font-size: 20px;
+  margin: 0 10px;
+}
+header nav ul li a,
+header nav ul li a:after,
+header nav ul li a:before {
+  transition: all 0.5s;
+}
+header nav ul li a:hover {
+  color: rgb(0, 0, 0);
+}

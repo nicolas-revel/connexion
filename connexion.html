@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="connexion.css" />
+    <title>Connexion - Mon site</title>
+  </head>
+  <body>
+    <header>
+      <h1>Mon site</h1>
+      <nav>
+        <ul>
+          <li><a href="">Accueil</a></li>
+          <li><a href="">Mon portefolio</a></li>
+          <li><a href="inscription.html">Devenir membre</a></li>
+          <li><a href="connexion.html">Vous connecter</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h2>Vous connecter</h2>
+      <form action="connexion.html">
+        <!-- Utilisation d'une section plutôt qu'un fieldset car le fieldset est très peu stylisable en CSS -->
+        <section>
+          <!-- input_group = input_label + input_field. Permet de faire l'animation en CSS par la suite. -->
+          <div class="input_group">
+            <label for="nom_utilisateur" class="input_label"
+              >Nom d'utilisateur</label
+            >
+            <input
+              type="text"
+              name="nom_utilisateur"
+              id="nom_utilisateur"
+              class="input_field"
+              required
+            />
+          </div>
+          <div class="input_group">
+            <label for="mdp">Mot de passe</label>
+            <input type="password" name="mot_de_passe" id="mdp" />
+          </div>
+          <div id="connexion">
+            <input type="submit" value="Connexion" />
+          </div>
+        </section>
+      </form>
+      <section>
+        <div class="conteneur_bouton">
+          <div class="bouton">
+            <div class="recto_bouton">Nouveau membre ?</div>
+            <div class="verso_bouton">
+              <a href="inscription.html">Vous inscrire</a>
+            </div>
+          </div>
+        </div>
+        <div class="conteneur_bouton">
+          <div class="bouton">
+            <div class="recto_bouton">Mot de passe oublié ?</div>
+            <div class="verso_bouton">
+              <a href="motdepasse.html">Réinitialiser mon mot de passe</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <section id="contact">
+        <h2>Me contacter</h2>
+        <ul>
+          <li>
+            <a href="mailto:nicolas.revel@laplateforme.i"
+              >nicolas.revel@laplateforme.io</a
+            >
+          </li>
+          <li><a href="tel:+33638407194">06 38 40 71 94</a></li>
+        </ul>
+      </section>
+      <section id="reseaux">
+        <ul>
+          <li>
+            <a href="https://twitter.com/NicolasRevel4"
+              ><img src="img/logotwitter.png" alt="Logo twitter"
+            /></a>
+          </li>
+          <li>
+            <a href="https://github.com/nicolas-revel"
+              ><img src="img/logogithub.png" alt="Logo github"
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/nico_rvl/"
+              ><img src="img/logoinstagram.png" alt="Logo instagram"
+            /></a>
+          </li>
+        </ul>
+      </section>
+    </footer>
+  </body>
+</html>
