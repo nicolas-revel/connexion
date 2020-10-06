@@ -19,10 +19,12 @@
       </nav>
     </header>
     <main id="main_inscription">
+      <h2>Inscription</h2>
+        <p>Nous aimerions vous connaitre un peu plus ...</p>
       <form action="connexion.html">
-        <section id="information_connection">
+        <section id="information_inscription">
           <div id="inputmail" class="input_group">
-            <label for="user_mail">Votre mail</label>
+            <label for="user_mail" class="input_label">Votre mail</label>
             <input
               type="email"
               name="mail_utilisateur"
@@ -33,18 +35,18 @@
               placeholder="example@mail.com"
             />
           </div>
-          <div id="userlogs">
-            <div id="userlogin" class="input_group">
-              <label for="user_login" class="input_label"
-                >Nom d'utilisateur</label
-              >
-              <input
-                type="text"
-                name="nom_utilisateur"
-                id="user_login"
-                class="input_field"
-                required
-              />
+          <div id="logs">
+              <div id="userlogin" class="input_group">
+                <label for="user_login" class="input_label"
+                  >Nom d'utilisateur</label
+                >
+                <input
+                  type="text"
+                  name="nom_utilisateur"
+                  id="user_login"
+                  class="input_field"
+                  required
+                />
             </div>
             <div id="password">
               <div id="newpwd" class="input_group">
@@ -101,15 +103,15 @@
             />
           </div>
           <div class="input_group">
-            <label for="user_gender">Genre</label>
+            <label for="user_gender" class="input_label">Genre</label>
             <select name="genre_utilisateur" id="user_gender">
               <option value="masculin">Masculin</option>
               <option value="féminin">Féminin</option>
               <option value="autre">Autre</option>
             </select>
           </div>
-          <div>
-            <label for="user_studylvl">Niveau d'étude</label>
+          <div class="input_group" id="niveau_etude">
+            <label for="user_studylvl" class="input_label">Niveau d'étude</label>
             <select name="niveau-etude_utilisateur" id="user_studylvl" required>
               <optgroup label="Pre-Bac">
                 <option value="cap-bep">CAP / BEP</option>
