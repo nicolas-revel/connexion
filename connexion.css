@@ -1,3 +1,5 @@
+/* Elements communs à toutes les pages */
+
 @font-face {
   font-family: Gravity;
   src: url(fonts/Gravity-Regular.otf);
@@ -16,12 +18,11 @@ body {
 /* Mise en forme du header : début */
 
 header {
-  margin: 0 0 20px 0;
   background-color: none;
   border-style: none;
   border-bottom: 2px black solid;
   height: 10%;
-  width: 90%;
+  width: 95%;
   display: flex;
   justify-content: space-between;
 }
@@ -35,29 +36,103 @@ header h1 {
 
 header nav {
   margin-right: 5%;
-  width: 50%;
+  width: 95%;
 }
 
 header nav ul {
   list-style: none;
   text-align: center;
 }
+
 header nav ul li {
   display: inline-block;
 }
+
 header nav ul li a {
   display: block;
-  padding: 2vh 25px;
+  padding: 1vh 25px;
   text-decoration: none;
   color: #989898;
-  font-size: 20px;
+  font-size: 18px;
   margin: 0 10px;
 }
+
 header nav ul li a,
 header nav ul li a:after,
 header nav ul li a:before {
   transition: all 0.5s;
 }
+
 header nav ul li a:hover {
   color: rgb(0, 0, 0);
 }
+
+/* Fin de la mise en forme du header */
+
+/* Mise en forme du footer */
+
+/* Section contact */
+
+footer {
+  background-color: none;
+  border-style: none;
+  border-top: 2px black solid;
+  height: 7%;
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
+
+#contact {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+
+#contact h2 {
+  font-size: 25px;
+  font-weight: bolder;
+  margin: 3%;
+}
+
+#contact ul {
+  list-style: none;
+  text-align: center;
+}
+
+#contact ul li {
+  display: inline-block;
+}
+
+#contact ul li a {
+  display: block;
+  padding: 5% 10px;
+  text-decoration: none;
+  color: #000000;
+  font-size: 14px;
+  margin: 0 10px;
+}
+
+/* Section réseaux */
+
+#reseaux ul {
+  list-style: none;
+  text-align: center;
+}
+
+#reseaux ul li {
+  display: inline-block;
+}
+
+#reseaux ul li a {
+  display: block;
+  padding: 0px 40px;
+  margin: 0px;
+  text-decoration: none;
+  color: #000000;
+  font-size: 14px;
+  margin: 0 10px;
+}
+
+/* Fin de la mise en forme du footer */
