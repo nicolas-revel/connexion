@@ -147,7 +147,7 @@ footer {
   background-color: #a3a3a3;
   display: flex;
   flex-direction: column;
-  animation: fadein 1500ms linear forwards;
+  animation: fadein 1000ms linear forwards;
 }
 
 @keyframes fadein {
@@ -324,7 +324,7 @@ main#main_inscription {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  animation: fadein 1500ms linear forwards;
+  animation: fadein 1000ms linear forwards;
 }
 
 @keyframes fadein {
@@ -474,7 +474,7 @@ form#form_inscription {
 
 /* Mise en forme mot de passe */
 
-div#newpwd {
+div#mdp {
   border: 2px #ffffff;
   border-style: solid;
   border-radius: 5px;
@@ -486,7 +486,7 @@ div#newpwd {
   height: max-content;
 }
 
-#newpwd .input_label {
+#mdp .input_label {
   font-family: Gravity;
   background-color: transparent;
   padding: 3px;
@@ -495,7 +495,7 @@ div#newpwd {
   color: #ffffff;
 }
 
-#newpwd .input_field {
+#mdp .input_field {
   font-family: Gravity;
   background-color: transparent;
   padding: 3px;
@@ -507,18 +507,18 @@ div#newpwd {
   color: #ffffff;
 }
 
-#newpwd .input_field:focus {
+#mdp .input_field:focus {
   outline: none;
   background-color: transparent;
 }
 
-#newpwd .input_field ::placeholder {
+#mdp .input_field ::placeholder {
   color: #ffffffe7;
 }
 
 /* Mise en forme confirmation mot de passe */
 
-div#confirmpwd {
+div#confirm_mdp {
   border: 2px #ffffff;
   margin-top: 20px;
   border-style: solid;
@@ -531,7 +531,7 @@ div#confirmpwd {
   height: max-content;
 }
 
-#confirmpwd .input_label {
+#confirm_mdp .input_label {
   font-family: Gravity;
   background-color: transparent;
   padding: 3px;
@@ -540,7 +540,7 @@ div#confirmpwd {
   color: #ffffff;
 }
 
-#confirmpwd .input_field {
+#confirm_mdp .input_field {
   font-family: Gravity;
   background-color: transparent;
   padding: 3px;
@@ -552,12 +552,12 @@ div#confirmpwd {
   color: #ffffff;
 }
 
-#confirmpwd .input_field:focus {
+#confirm_mdp .input_field:focus {
   outline: none;
   background-color: transparent;
 }
 
-#confirmpwd .input_field ::placeholder {
+#confirm_mdp .input_field ::placeholder {
   color: #ffffffe7;
 }
 
@@ -836,7 +836,7 @@ section#informations_complementaires {
   display: flex;
   flex-direction: column;
   align-items: center;
-  animation: fadein 1500ms linear forwards;
+  animation: fadein 1000ms linear forwards;
 }
 
 @keyframes fadein {
@@ -853,14 +853,13 @@ section#informations_complementaires {
   font-weight: lighter;
   margin-top: 30px;
   margin-right: 120px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   color: #ffffff;
 }
 
 #main_motdepasse p {
-  margin: 0px;
   font-size: 20px;
-  width: 90%;
+  width: 80%;
   text-align: justify;
   color: #ffffff;
   line-height: 2em;
@@ -869,7 +868,7 @@ section#informations_complementaires {
 #main_motdepasse form {
   width: 80%;
   height: 100px;
-  margin: 10px;
+  margin: 0px;
   display: flex;
   align-items: center;
   flex-direction: row;

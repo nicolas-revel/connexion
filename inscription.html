@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="connexion.css" />
-    <title>Page de connexion - Mon site</title>
+    <title>Inscription - Mon site</title>
   </head>
   <body>
     <header>
@@ -49,17 +49,17 @@
               />
             </div>
             <div id="password">
-              <div id="newpwd" class="input_group">
-                <label for="newpwd" class="input_label">Mot de passe</label>
+              <div id="mdp" class="input_group">
+                <label for="pwd" class="input_label">Mot de passe</label>
                 <input
                   type="password"
                   name="mot_de_passe"
-                  id="newpwd"
+                  id="pwd"
                   class="input_field"
                   required
                 />
               </div>
-              <div id="confirmpwd" class="input_group">
+              <div id="confirm_mdp" class="input_group">
                 <label for="confirmpwd" class="input_label">Confirmation</label>
                 <input
                   type="password"
@@ -105,6 +105,7 @@
           <div class="input_group">
             <label for="user_gender" class="input_label">Genre</label>
             <select name="genre_utilisateur" id="user_gender" required>
+              <option value=""></option>
               <option value="masculin">Masculin</option>
               <option value="féminin">Féminin</option>
               <option value="autre">Autre</option>
@@ -115,6 +116,7 @@
               >Niveau d'étude</label
             >
             <select name="niveau-etude_utilisateur" id="user_studylvl" required>
+              <option value=""></option>
               <optgroup label="Pre-Bac">
                 <option value="cap-bep">CAP / BEP</option>
               </optgroup>
