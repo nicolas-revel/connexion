@@ -22,23 +22,29 @@
       <h2>Vous connecter</h2>
       <form action="connexion.html">
         <!-- input_group = input_label + input_field. Permet de faire l'animation en CSS par la suite. -->
-          <div class="input_group">
-            <label for="nom_utilisateur" class="input_label"
-              >Nom d'utilisateur</label
-            >
-            <input
-              type="text"
-              name="nom_utilisateur"
-              id="nom_utilisateur"
-              class="input_field"
-              required
-            />
-          </div>
-          <div class="input_group">
-            <label for="mdp" class="input_label">Mot de passe</label>
-            <input type="password" name="mot_de_passe" id="mdp" class="input_field"/>
-          </div>
-            <input type="submit" value="Connexion" id="connexion"/>
+        <div class="input_group">
+          <label for="nom_utilisateur" class="input_label"
+            >Nom d'utilisateur</label
+          >
+          <input
+            type="text"
+            name="nom_utilisateur"
+            id="nom_utilisateur"
+            class="input_field"
+            required
+          />
+        </div>
+        <div class="input_group">
+          <label for="mdp" class="input_label">Mot de passe</label>
+          <input
+            type="password"
+            name="mot_de_passe"
+            id="mdp"
+            class="input_field"
+            required
+          />
+        </div>
+        <input type="submit" value="Connexion" id="connexion" />
       </form>
       <section>
         <div class="conteneur_bouton">

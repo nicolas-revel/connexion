@@ -151,8 +151,12 @@ footer {
 }
 
 @keyframes fadein {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 #main_connexion h2 {
@@ -174,7 +178,7 @@ footer {
 /* Input communs à toutes les pages */
 
 #main_connexion .input_group {
-  border:2px solid #ffffff;
+  border: 2px solid #ffffff;
   border-radius: 5px;
   display: flex;
   justify-content: space-between;
@@ -274,7 +278,8 @@ footer {
 }
 
 /* Postitionne le recto et le verso */
-.recto_bouton, .verso_bouton {
+.recto_bouton,
+.verso_bouton {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -323,8 +328,12 @@ main#main_inscription {
 }
 
 @keyframes fadein {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 form#form_inscription {
@@ -354,7 +363,7 @@ form#form_inscription {
   align-items: center;
   flex-wrap: wrap;
   width: 70vw;
-  padding:0;
+  padding: 0;
   margin: 20px;
 }
 
@@ -758,7 +767,6 @@ section#informations_complementaires {
   height: 80%;
   /* background-  color: green; */
   width: 100%;
-
 }
 
 #user_hobbies p {
@@ -832,8 +840,12 @@ section#informations_complementaires {
 }
 
 @keyframes fadein {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 #main_motdepasse h2 {
@@ -841,6 +853,7 @@ section#informations_complementaires {
   font-weight: lighter;
   margin-top: 30px;
   margin-right: 120px;
+  margin-bottom: 20px;
   color: #ffffff;
 }
 
@@ -850,13 +863,13 @@ section#informations_complementaires {
   width: 90%;
   text-align: justify;
   color: #ffffff;
-  line
+  line-height: 2em;
 }
 
 #main_motdepasse form {
-  width:80%;
+  width: 80%;
   height: 100px;
-  margin: 20px;
+  margin: 10px;
   display: flex;
   align-items: center;
   flex-direction: row;
