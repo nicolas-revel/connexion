@@ -216,7 +216,7 @@ footer {
 }
 
 #connexion:hover {
-  background-color: transparent;
+  background-color: #777777;
   color: white;
   border: 2px solid #ffffff;
   border-radius: 6px;
@@ -246,7 +246,7 @@ footer {
 /* Contient le bouton et les deux faces (recto/verso) */
 .conteneur_bouton {
   background-color: transparent;
-  width: 35%;
+  width: 270px;
   height: 45px;
   border: 2px solid #f1f1f1;
   border-radius: 6px;
@@ -289,7 +289,8 @@ footer {
 
 /* Style de la face recto */
 .verso_bouton {
-  background-color: transparent;
+  background-color: #777777;
+  border-radius: 5px;
   transform: rotateY(180deg);
   display: flex;
   justify-content: center;
@@ -791,7 +792,7 @@ section#informations_complementaires {
 }
 
 #enregistrer:hover {
-  background-color: transparent;
+  background-color: #777777;
   color: white;
   border: 2px solid #ffffff;
   border-radius: 6px;
@@ -805,3 +806,105 @@ section#informations_complementaires {
 }
 
 /* Fin de la page inscription */
+
+/* Mise en forme de la page de mot de passe oublié */
+
+#main_motdepasse {
+  height: 50%;
+  width: 60%;
+  background-color: #a3a3a3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#main_motdepasse h2 {
+  font-size: 50px;
+  font-weight: lighter;
+  margin-top: 30px;
+  margin-right: 120px;
+  color: #ffffff;
+}
+
+#main_motdepasse p {
+  margin: 0px;
+  font-size: 20px;
+  width: 90%;
+  text-align: justify;
+  color: #ffffff;
+}
+
+#main_motdepasse form {
+  width:80%;
+  height: 100px;
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#main_motdepasse #inputmail {
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+#inputmail .input_label {
+  font-family: Gravity;
+  background-color: transparent;
+  padding: 3px;
+  margin: 4px;
+  border-radius: 5px;
+  color: #ffffff;
+}
+
+#inputmail .input_field {
+  font-family: Gravity;
+  background-color: transparent;
+  padding: 3px;
+  margin: 4px;
+  border-radius: 5px;
+  border: none;
+  height: 20px;
+  flex-grow: 1;
+  color: #ffffff;
+}
+
+#inputmail .input_field:focus {
+  outline: none;
+  background-color: transparent;
+}
+
+#inputmail .input_field::placeholder {
+  color: #ffffffab;
+}
+
+#envoyer {
+  height: 50px;
+  width: 160px;
+  font-family: Gravity;
+  font-size: 20px;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  margin: 30px;
+  position: fix;
+}
+
+#envoyer:hover {
+  background-color: #777777;
+  color: white;
+  border: 2px solid #ffffff;
+  border-radius: 6px;
+  transition: 300ms;
+}
+
+#envoyer:focus {
+  outline: #ffffff;
+  height: 50px;
+  width: 152px;
+}
