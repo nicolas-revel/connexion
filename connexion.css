@@ -147,6 +147,12 @@ footer {
   background-color: #a3a3a3;
   display: flex;
   flex-direction: column;
+  animation: fadein 1500ms linear forwards;
+}
+
+@keyframes fadein {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
 #main_connexion h2 {
@@ -313,6 +319,12 @@ main#main_inscription {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  animation: fadein 1500ms linear forwards;
+}
+
+@keyframes fadein {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
 form#form_inscription {
@@ -348,7 +360,7 @@ form#form_inscription {
 
 /* Mise en forme du mail */
 
-#inputmail {
+#inputmail-inscription {
   border: 2px #ffffff;
   margin: 0 20%;
   border-style: solid;
@@ -359,7 +371,7 @@ form#form_inscription {
   width: 100%;
 }
 
-#inputmail .input_label {
+#inputmail-inscription .input_label {
   font-family: Gravity;
   font-size: 16px;
   background-color: transparent;
@@ -369,7 +381,7 @@ form#form_inscription {
   color: #ffffff;
 }
 
-#inputmail .input_field {
+#inputmail-inscription .input_field {
   font-family: Gravity;
   background-color: transparent;
   padding: 3px;
@@ -381,12 +393,12 @@ form#form_inscription {
   color: #ffffff;
 }
 
-#inputmail .input_field:focus {
+#inputmail-inscription .input_field:focus {
   outline: none;
   background-color: transparent;
 }
 
-#inputmail .input_field::placeholder {
+#inputmail-inscription .input_field::placeholder {
   color: #ffffffab;
 }
 
@@ -816,6 +828,12 @@ section#informations_complementaires {
   display: flex;
   flex-direction: column;
   align-items: center;
+  animation: fadein 1500ms linear forwards;
+}
+
+@keyframes fadein {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
 #main_motdepasse h2 {
@@ -832,6 +850,7 @@ section#informations_complementaires {
   width: 90%;
   text-align: justify;
   color: #ffffff;
+  line
 }
 
 #main_motdepasse form {
@@ -844,7 +863,7 @@ section#informations_complementaires {
   justify-content: space-between;
 }
 
-#main_motdepasse #inputmail {
+#inputmail {
   border: 2px solid #ffffff;
   border-radius: 5px;
   display: flex;
